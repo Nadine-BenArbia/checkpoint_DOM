@@ -53,6 +53,13 @@ for(let i=0; i<closebtn.length;i++){
 
 for(let i=0; i<likebtn.length;i++){
    likebtn[i].addEventListener("click",function() {
-     likebtn[i].style.fill="red";
+      console.log("test")
+      if( likebtn[i].style.fill=="red"){
+         likebtn[i].style.fill="black";
+        } 
+        else {
+         likebtn[i].style.fill="red";
+        }
   });
+ 
 }
