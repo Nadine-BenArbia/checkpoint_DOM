@@ -6,6 +6,7 @@ let btnMoin=document.querySelectorAll(".btnMoin");
 let price=document.querySelectorAll(".price");
 let produit=document.querySelectorAll(".itemProduit");
 let closebtn=document.querySelectorAll(".close");
+let likebtn=document.querySelectorAll("svg");
 
 
 let qtes=document.getElementsByClassName("border").className ="qts";
@@ -49,3 +50,9 @@ for(let i=0; i<closebtn.length;i++){
   });
 }
 
+
+for(let i=0; i<likebtn.length;i++){
+   likebtn[i].addEventListener("click",function() {
+     likebtn[i].style.fill="red";
+  });
+}
